@@ -1,0 +1,45 @@
+{
+	"parameters" :
+	{
+	},
+	"panels" :
+	{
+		"main_panel" :
+		{
+			"url":"https://vmiis.github.io/modules/panels/main.html",
+			"name":"Business Portal",
+			"columns":
+			[
+				{
+					"sections":
+					[
+						{
+							"name":" ",
+							"tasks":
+							[
+								{
+									"module_id":"application",
+									"name":"Applications",
+									"table_id":"20010735",
+									"url":"https://vmiis.github.io/modules/portal/application.html"
+								},
+								{
+									"module_id":"query",
+									"name":"Queries",
+									"table_id":"20010437",
+									"url":"https://vmiis.github.io/modules/portal/query.html"
+								},
+								{
+									"module_id":"import_and_export",
+									"name":"Import and export",
+									"table_id":"",
+									"url":"https://vmiis.github.io/modules/portal/import_and_export.html"
+								}
+							]
+						}
+					]
+				}
+			]
+		}
+	}
+}

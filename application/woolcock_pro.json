@@ -1,0 +1,19 @@
+{
+	"hosting_path":"https://woolcock-imr.github.io/business-portal",
+	"library_path":"https://cbs.wappsystem.com/dev/github",
+	"api_path":"https://rt.woolcock.org.au/",
+	"server":"production",
+	"modules":
+	{
+		"home":
+		{
+			"url":"https://vmiis.github.io/modules/home/home.html"
+		}
+	},
+	"panels":
+	{
+		"main":{
+			"config_url":"https://wappsystem.github.io/configurations/control_panel/woolcock_business_portal.json"
+		}
+	}
+}
