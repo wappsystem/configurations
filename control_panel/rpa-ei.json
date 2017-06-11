@@ -1,0 +1,47 @@
+{
+	"parameters" :
+	{
+	},
+	"panels" :
+	{
+		"main_panel" :
+		{
+			"url":"https://vmiis.github.io/modules/panels/main_with_counting.html",
+			"name":"RPA EI",
+			"columns":
+			[
+				{
+					"sections":
+					[
+						{
+							"name" : "Participants",
+							"tasks" :
+							[
+								{
+								   "module_id" : "participant",
+								   "name" : "Participants",
+								   "table_id" : "20004063",
+								   "url" : "https://wappsystem.github.io/modules/rpa-ei/participant.html",
+								   "counting":"1"
+								}
+							]
+						},
+						{
+							"name" : "Notes",
+							"tasks" :
+							[
+								{
+									"module_id" : "task_notes",
+									"name" : "All Task Notes",
+									"table_id" : "20004140",
+									"url" : "https://wappsystem.github.io/modules/rpa-ei/task_notes.html",
+									"counting":"1"
+								}
+							]
+						}
+					]
+				}
+			]
+		}
+	}
+}
