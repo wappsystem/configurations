@@ -2,8 +2,8 @@
 	"parameters" :
 	{
 		"sql_participant":"@('Initials')+' '+@('DOB')"
-	},
-	"panels" :
+	}
+	,"panels" :
 	{
 		"main_panel" :
 		{
@@ -50,7 +50,7 @@
 							"tasks" :
 							[
 								{
-									"module_id" : "child_Informed_Concent",
+									"module_id" : "Informed_Concent",
 									"name" : "Informed Concent",
 									"table_id" : "20004062",
 									"url" : "https://wappsystem.github.io/modules/rpa-ei/tasks/Informed_Concent.html",
@@ -59,7 +59,40 @@
 								}
 							]
 						}
-				   ]
+					]
+				}
+				,{
+					"sections" :
+					[
+						{
+							"name" : "CO2 Visit 1",
+							"tasks" :
+							[
+								{
+									"module_id" : "v1_ESS",
+									"name" : "Epworth Sleepiness Scale (ESS)",
+									"table_id" : "20004212",
+									"url" : "https://wappsystem.github.io/modules/rpa-ei/tasks/ess.html",
+									"visit_task" : "CO2 Visit 1 - ESS",
+									"counting":"1"
+								}
+							]
+						}
+						,{
+							"name" : "CO2 Visit 2",
+							"tasks" :
+							[
+								{
+									"module_id" : "v2_ESS",
+									"name" : "Epworth Sleepiness Scale (ESS)",
+									"table_id" : "20004213",
+									"url" : "https://wappsystem.github.io/modules/rpa-ei/tasks/ess.html",
+									"visit_task" : "CO2 Visit 2 - ESS",
+									"counting":"1"
+								}
+							]
+						}
+					]
 				}
 			]
 		}
@@ -87,9 +120,46 @@
 								}
 							]
 						}
-				   ]
+						,{
+							"name" : "CO2 Visit 1",
+							"tasks" :
+							[
+								{
+									"module_id" : "child_v1_ESS",
+									"name" : "Epworth Sleepiness Scale (ESS)",
+									"table_id" : "20004212",
+									"url" : "https://wappsystem.github.io/modules/rpa-ei/tasks/ess.html",
+									"visit_task" : "CO2 Visit 1 - ESS",
+									"counting":"1",
+									"quest":"1",
+									"single_record":"1"
+								}
+							]
+						}
+						,{
+							"name" : "CO2 Visit 2",
+							"tasks" :
+							[
+								{
+									"module_id" : "child_v2_ESS",
+									"name" : "Epworth Sleepiness Scale (ESS)",
+									"table_id" : "20004213",
+									"url" : "https://wappsystem.github.io/modules/rpa-ei/tasks/ess.html",
+									"visit_task" : "CO2 Visit 2 - ESS",
+									"counting":"1",
+									"quest":"1",
+									"single_record":"1"
+								}
+							]
+						}
+					]
 				}
 			]
 		}
+	}
+	,"participant_login_setup":
+	{
+		"table_id":"20004124",
+		"url" : "https://wappsystem.github.io/modules/rpa-ei/participant_login_setup.html"
 	}
 }
