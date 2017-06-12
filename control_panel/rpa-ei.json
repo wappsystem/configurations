@@ -1,13 +1,14 @@
 {
 	"parameters" :
 	{
+		"sql_participant":"@('Initials')+' '+@('DOB')"
 	},
 	"panels" :
 	{
 		"main_panel" :
 		{
 			"url":"https://vmiis.github.io/modules/panels/main_with_counting.html",
-			"name":"RPA EI",
+			"name":"RPA-EI Clinical Trials",
 			"columns":
 			[
 				{
@@ -25,8 +26,8 @@
 								   "counting":"1"
 								}
 							]
-						},
-						{
+						}
+						,{
 							"name" : "Notes",
 							"tasks" :
 							[
@@ -40,6 +41,53 @@
 							]
 						}
 					]
+				}
+				,{
+					"sections" :
+					[
+						{
+							"name" : "Screening",
+							"tasks" :
+							[
+								{
+									"module_id" : "child_Informed_Concent",
+									"name" : "Informed Concent",
+									"table_id" : "20004062",
+									"url" : "https://wappsystem.github.io/modules/rpa-ei/tasks/Informed_Concent.html",
+									"visit_task" : "Screening - Informed_Concent",
+									"counting":"1"
+								}
+							]
+						}
+				   ]
+				}
+			]
+		}
+		,"child_panel" :
+		{
+			"url" : "https://vmiis.github.io/modules/panels/child_with_counting.html",
+			"name" : "",
+			"columns" :
+			[
+				{
+					"sections" :
+					[
+						{
+							"name" : "Screening",
+							"tasks" :
+							[
+								{
+									"module_id" : "child_Informed_Concent",
+									"name" : "Informed Concent",
+									"table_id" : "20004062",
+									"url" : "https://wappsystem.github.io/modules/rpa-ei/tasks/Informed_Concent.html",
+									"visit_task" : "Screening - Informed_Concent",
+									"counting":"1",
+									"single_record":"1"
+								}
+							]
+						}
+				   ]
 				}
 			]
 		}
