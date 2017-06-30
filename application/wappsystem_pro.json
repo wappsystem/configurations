@@ -1,6 +1,6 @@
 {
-	"hosting_path":"https://wappsystem.github.io/business-portal",
 	"library_path":"https://cbs.wappsystem.com/dev/github",
+	"parts_path":"https://vmiis.github.io/parts",
 	"api_path":"https://cbs.wappsystem.com/pro/",
 	"server":"production",
 	"modules":
